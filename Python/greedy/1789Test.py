@@ -11,7 +11,7 @@ while True:
             if sum > receive_int:
                 max_number = 0
                 break
-
+        print(f"sum : {sum}")
         if max_number != 0:
             break
 
