@@ -9,7 +9,9 @@ def hiring(count):
     first_document_grade = []
     first_interview_grade = []
     #grade받아오기
+    before_grade = []
     for i in range(0, count):
+        before_grade
         document_grade, interview_grade = map(int, input().split())
 
         if document_grade == 1:
