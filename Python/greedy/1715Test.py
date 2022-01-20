@@ -4,11 +4,19 @@ result = 0
 for i in range(0, receive_count):
     card_count_list.append(int(input()))
 
-##오름차순 정렬
-card_count_list.sort()
 
-##카드더미 수 : n
-##카드 더미를 작은것부터 a b c d ...라 하면
-##(n-1)a + (n-2)b + (n-3)c ...
-for index, element in enumerate(card_count_list):
-    
+while len(card_count_list) != 1:
+    sum = 0
+    ##가장작은 두 수 가져오고 삭제
+    for i in range(0,2):
+        min_index = card_count_list.index(min(card_count_list))
+        sum += card_count_list[min_index]
+        del card_count_list[min_index]
+
+    result += sum
+    card_count_list.append(sum)
+
+
+
+
+print(result)
