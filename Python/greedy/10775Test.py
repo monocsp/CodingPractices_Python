@@ -3,7 +3,7 @@
 gate_count = int(input())
 plain_count = int(input())
 #도킹한 게이트
-dock_gate_dic = {}
+# dock_gate_dic = {}
 #도킹을 계속할 수 있는지 여부 확인.
 # can_docking = True
 #
@@ -28,19 +28,18 @@ dock_gate_dic = {}
 # #도킹한 게이트 수 길이를 출력.
 # print(len(dock_gate_dic.keys()))
 #
-can_docking_number = []
-
+docking_plain_count = 0
+gate_list = []
 for i in range(0, plain_count):
-    can_docking_number.append(int(input()))
+    gate_list.append(int(input()))
 
-for can_gate_maxi_number in can_docking_number:
-    for gate_number in range(can_gate_maxi_number, 0, -1):
-        if gate_number in dock_gate_dic:
-            if gate_number == 1:
-                print(len(dock_gate_dic.keys()))
-                quit()
-        else:
-            dock_gate_dic[gate_number] = True
-            break
-
-print(plain_count)
+for i in gate_list:
+    print(f"{i} and {docking_plain_count}")
+    if i > docking_plain_count:
+        docking_plain_count += 1
+    elif i == docking_plain_count:
+        docking_plain_count += 1
+        break
+    else:
+        break
+print(docking_plain_count)
