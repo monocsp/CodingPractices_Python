@@ -30,7 +30,7 @@ def create_memo(data):
 # http://l4c02.lifejuin.biz/QRImage/20210121/TAE.TSO.KY01/182716388/index.html
 # http://photoqr.kr/R/dsshop04/210322/011811/index.html
 # http://l4c02.lifejuin.biz/QRImage/20210809/TAE.CGG.DGDSRS01/162120767/index.html
-# http://download.photodrink.com/QRImage/20220515/TAE.CGG.DSRS03/173331749/index.php
+# http://download.photodrink.com/QRImage/20220515/TAE.CGG.DSRS03/173331749/index.phdp
 # http://photoqr.kr/R/dsshop04/210322/011811/index.html
 # s-oem.com:33333/QRImage/20230608/KYG.YIN.EVERFAIRY02/184341590/index.html
 async def main():
