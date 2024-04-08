@@ -17,9 +17,9 @@ def dfs(start, end,count, selected):
 def solution(n, m):
     selected = []
 
-    dfs(1,4, n, selected)
+    dfs(1,n, m, selected)
 
 
 
 if __name__ == "__main__" :
-    dfs(1,4,2,[])
+    solution(5,1)
